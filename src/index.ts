@@ -69,14 +69,54 @@
 //     console.log(i);
 // }
 
-let items: string[] = ["J2EE", "JAVA", "IDB-BISEW", "BITL"];
-let i = 0;
+// let items: string[] = ["J2EE", "JAVA", "IDB-BISEW", "BITL"];
+// let i = 0;
 // while (items[i]) {
 //     console.log(items[i]);
 //     i++;
 // }
 
-do {
-    console.log(items[i]);
-    i++;
-} while (i < items.length);
+// do {
+//     console.log(items[i]);
+//     i++;
+// } while (i < items.length);
+
+const User = {
+    name: "IDB-BISEW",
+    age: 20
+}
+console.log(User);
+console.log(User.name);
+console.log(User.age);
+console.log(User.name + " " + User.age);
+console.log(User.name + " " + User.age + " " + "Batch");
+console.log(User.name + " " + User.age + " " + "Batch" + " " + "IDB-BISEW");
+console.log(User.name + " " + User.age + " " + "Batch" + " " + "IDB-BISEW" + " " + "J2EE");
+
+const User1: { username: string, password: number } = {
+    username: "IDB-BISEW",
+    password: 20
+}
+console.log(User1);
+console.log(User1.username);
+console.log(User1.password);
+console.log(User1.username + " " + User1.password);
+console.log(User1.username + " " + User1.password + " " + "Batch");
+console.log(User1.username + " " + User1.password + " " + "Batch" + " " + "IDB-BISEW");
+console.log(User1.username + " " + User1.password + " " + "Batch" + " " + "IDB-BISEW" + " " + "J2EE");
+
+type User2 = {
+    username: string,
+    password: number
+}
+let User2: User2 = {
+    username: "IDB-BISEW",
+    password: 20
+}
+console.log(User2);
+console.log(User2.username);
+console.log(User2.password);
+console.log(User2.username + " " + User2.password);
+console.log(User2.username + " " + User2.password + " " + "Batch");
+console.log(User2.username + " " + User2.password + " " + "Batch" + " " + "IDB-BISEW");
+console.log(User2.username + " " + User2.password + " " + "Batch" + " " + "IDB-BISEW" + " " + "J2EE");

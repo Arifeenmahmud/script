@@ -23,6 +23,30 @@
 // let items1: any[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, '10'];
 // console.log(items1[2]);
 
-let x: [string, number];
-x = ["IDB-BISEW", 10];
-console.log(x[1]);
+// let x: [string, number];
+// x = ["IDB-BISEW", 10];
+// console.log(x[1]);
+
+// let x: [string, number][];
+// x = [
+//     ["IDB-BISEW", 10],
+//     ["J2EE", 20],
+//     ["IDB-BISEW", 10]
+// ];
+
+// console.log(x[2][1]);
+
+
+enum Color {
+    Red = 1,
+    Green,
+    Blue = 10,
+};
+
+console.log(Color.Red);
+let c: Color = Color.Green;
+let d: Color = Color.Blue;
+
+console.log(c);
+console.log(d);
+

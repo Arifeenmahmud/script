@@ -132,3 +132,15 @@ function newsum(a, b) {
     return a + b;
 }
 console.log(newsum(10, 20));
+/*
+
+npm install -g typescript
+C:\Users\Arifeen\Desktop\exampleType>code .
+node index.ts
+tsc index.ts
+node index.js
+tsc --init
+C:\Users\Arifeen\Desktop\exampleType>cd src
+C:\Users\Arifeen\Desktop\exampleType\src>tsc index.ts
+C:\Users\Arifeen\Desktop\exampleType\src>tsc
+*/ 

@@ -37,16 +37,25 @@
 // console.log(x[2][1]);
 
 
-enum Color {
-    Red = 1,
-    Green,
-    Blue = 10,
-};
+// enum Color {
+//     Red = 1,
+//     Green,
+//     Blue = 10,
+// };
 
-console.log(Color.Red);
-let c: Color = Color.Green;
-let d: Color = Color.Blue;
+// console.log(Color.Red);
+// let c: Color = Color.Green;
+// let d: Color = Color.Blue;
 
-console.log(c);
-console.log(d);
+// console.log(c);
+// console.log(d);
 
+// let notSure: unknown = 4;
+// console.log(notSure);
+
+let notSure: any = 4;
+console.log(notSure);
+notSure = "IDB-BISEW";
+console.log(notSure);
+notSure = false;
+console.log(notSure);

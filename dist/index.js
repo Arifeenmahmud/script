@@ -26,15 +26,21 @@
 //     ["IDB-BISEW", 10]
 // ];
 // console.log(x[2][1]);
-var Color;
-(function (Color) {
-    Color[Color["Red"] = 1] = "Red";
-    Color[Color["Green"] = 2] = "Green";
-    Color[Color["Blue"] = 10] = "Blue";
-})(Color || (Color = {}));
-;
-console.log(Color.Red);
-let c = Color.Green;
-let d = Color.Blue;
-console.log(c);
-console.log(d);
+// enum Color {
+//     Red = 1,
+//     Green,
+//     Blue = 10,
+// };
+// console.log(Color.Red);
+// let c: Color = Color.Green;
+// let d: Color = Color.Blue;
+// console.log(c);
+// console.log(d);
+// let notSure: unknown = 4;
+// console.log(notSure);
+let notSure = 4;
+console.log(notSure);
+notSure = "IDB-BISEW";
+console.log(notSure);
+notSure = false;
+console.log(notSure);

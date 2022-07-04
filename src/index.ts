@@ -53,9 +53,18 @@
 // let notSure: unknown = 4;
 // console.log(notSure);
 
-let notSure: any = 4;
-console.log(notSure);
-notSure = "IDB-BISEW";
-console.log(notSure);
-notSure = false;
-console.log(notSure);
+// let notSure: any = 4;
+// console.log(notSure);
+// notSure = "IDB-BISEW";
+// console.log(notSure);
+// notSure = false;
+// console.log(notSure);
+
+
+// let a: string | number = "IDB-BISEW";
+// console.log(a);
+
+let items: string[] = ["IDB-BISEW", "J2EE", "IDB-BISEW", "BITL"];
+for (let i of items) {
+    console.log(i);
+}

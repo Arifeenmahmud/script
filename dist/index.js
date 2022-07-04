@@ -46,7 +46,17 @@
 // console.log(notSure);
 // let a: string | number = "IDB-BISEW";
 // console.log(a);
-let items = ["IDB-BISEW", "J2EE", "IDB-BISEW", "BITL"];
-for (let i of items) {
-    console.log(i);
-}
+// let items: string[] = ["IDB-BISEW", "J2EE", "IDB-BISEW", "BITL"];
+// for (let i of items) {
+//     console.log(i);
+// }
+let items = ["J2EE", "JAVA", "IDB-BISEW", "BITL"];
+let i = 0;
+// while (items[i]) {
+//     console.log(items[i]);
+//     i++;
+// }
+do {
+    console.log(items[i]);
+    i++;
+} while (i < items.length);

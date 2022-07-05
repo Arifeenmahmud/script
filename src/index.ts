@@ -183,14 +183,123 @@ C:\Users\Arifeen\Desktop\exampleType\src>tsc
 
 
 
-interface point {
-    readonly x: number;
-    y: string;
+// interface point {
+//     readonly x: number;
+//     y: string;
+// }
+
+// let point1: point = { x: 10, y: "test" };
+// // point1.x = 20;
+// console.log(point1.x);
+// console.log(point1.y);
+
+// interface calculate {
+//     (a: number, b: number): number;
+// }
+// let calculate1: calculate = function (a: number, b: number): number {
+//     return a + b;
+// }
+// console.log(calculate1(10, 20));
+
+// interface calculate {
+//     (a: number, b: number): number;
+// }
+// let obj: calculate = (a: number, b: number): number => {
+//     return a + b;
+// }
+// console.log(obj(15, 20));
+
+
+// class greeting {
+//     msg!: string;
+//     constructor() {
+//     }
+//     set greetings(gtr: string) {
+//         this.msg = gtr;
+//     }
+//     get greetings(): string {
+//         return this.msg;
+//     }
+
+// }
+// let obj = new greeting();
+// obj.greetings = "IDB-BISEW";
+// console.log(obj.msg);
+
+
+// interface clockInterface {
+//     a: Date;
+// }
+// class clock implements clockInterface {
+//     a: Date = new Date();
+//     sayTime(): string {
+//         return `${this.a}`;
+//     }
+// }
+// let obj1 = new clock();
+// console.log(obj1.a);
+// console.log(obj1.sayTime());
+
+/*
+
+class p {
+    x!: string;
+    y!: number;
+    constructor(x: string, y: number) {
+        this.x = x;
+        this.y = y;
+    }
 }
+class q extends p {
+    z!: string;
+    constructor(x: string, y: number, z: string) {
+        super(x, y);
+        this.z = z;
+    }
+}
+let obj0 = new p("IDB-BISEW", 20);
+console.log(obj0.x);
 
-let point1: point = { x: 10, y: "test" };
-// point1.x = 20;
-console.log(point1.x);
-console.log(point1.y);
+let obj1 = new q("IDB-BISEW", 20, "Batch");
+console.log(obj0.x, obj1.y);
+
+let obj = new q("IDB-BISEW", 20, "Batch");
+console.log(obj.x);
+console.log(obj.y);
+console.log(obj.z);
+console.log(obj.x + " " + obj.y + " " + obj.z);
+console.log(obj.x + " " + obj.y + " " + obj.z + " " + "Batch");
+console.log(obj.x + " " + obj.y + " " + obj.z + " " + "Batch" + " " + "IDB-BISEW");
+console.log(obj.x + " " + obj.y + " " + obj.z + " " + "Batch" + " " + "IDB-BISEW" + " " + "J2EE");
+*/
 
 
+class p {
+    x!: string;
+    y!: number;
+    constructor(x: string, y: number) {
+        this.x = x;
+        this.y = y;
+    }
+    saySomething() {
+        console.log("I am Parant " + this.x + " " + this.y);
+    }
+}
+class q extends p {
+    z!: string;
+    constructor(x: string, y: number, z: string) {
+        super(x, y);
+        this.z = z;
+    }
+    saySomething() {
+        console.log(" I am Child " + this.x + " " + this.y + " " + this.z);
+    }
+
+}
+let obj0 = new p(" IDB-BISEW", 20);
+console.log(obj0.x);
+
+let obj1 = new q(" IDB-BISEW", 20, "Batch");
+console.log(obj0.x, obj1.y);
+console.log(obj0.saySomething());
+console.log(obj1.saySomething());

@@ -1,3 +1,19 @@
+
+/*
+
+npm install -g typescript
+C:\Users\Arifeen\Desktop\exampleType>code .
+node index.ts
+tsc index.ts
+node index.js
+tsc --init
+C:\Users\Arifeen\Desktop\exampleType>cd src
+C:\Users\Arifeen\Desktop\exampleType\src>tsc index.ts
+C:\Users\Arifeen\Desktop\exampleType\src>tsc
+*/
+
+
+
 // console.log("IDB is supported");
 
 // let x: number = 10;
@@ -147,32 +163,34 @@
 // let y: string = <string>x;
 // console.log(y);
 
-function sum(): number {
-    return 10;
-}
-console.log(sum());
+// function sum(): number {
+//     return 10;
+// }
+// console.log(sum());
 
-function display(): void {
-    console.log("IDB-BISEW");
-}
-display();
+// function display(): void {
+//     console.log("IDB-BISEW");
+// }
+// display();
 // let x = display();
 // console.log(x);
 
-function newsum(a: number, b: number): number {
-    return a + b;
+// function newsum(a: number, b: number): number {
+//     return a + b;
+// }
+// console.log(newsum(10, 20));
+
+
+
+
+interface point {
+    readonly x: number;
+    y: string;
 }
-console.log(newsum(10, 20));
 
-/*
+let point1: point = { x: 10, y: "test" };
+// point1.x = 20;
+console.log(point1.x);
+console.log(point1.y);
 
-npm install -g typescript
-C:\Users\Arifeen\Desktop\exampleType>code .
-node index.ts
-tsc index.ts
-node index.js
-tsc --init
-C:\Users\Arifeen\Desktop\exampleType>cd src
-C:\Users\Arifeen\Desktop\exampleType\src>tsc index.ts
-C:\Users\Arifeen\Desktop\exampleType\src>tsc
-*/
+

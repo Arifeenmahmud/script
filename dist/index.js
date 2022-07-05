@@ -224,8 +224,11 @@ console.log(obj.x + " " + obj.y + " " + obj.z + " " + "Batch");
 console.log(obj.x + " " + obj.y + " " + obj.z + " " + "Batch" + " " + "IDB-BISEW");
 console.log(obj.x + " " + obj.y + " " + obj.z + " " + "Batch" + " " + "IDB-BISEW" + " " + "J2EE");
 */
+/*
 class p {
-    constructor(x, y) {
+    x!: string;
+    y!: number;
+    constructor(x: string, y: number) {
         this.x = x;
         this.y = y;
     }
@@ -234,17 +237,36 @@ class p {
     }
 }
 class q extends p {
-    constructor(x, y, z) {
+    z!: string;
+    constructor(x: string, y: number, z: string) {
         super(x, y);
         this.z = z;
     }
     saySomething() {
         console.log(" I am Child " + this.x + " " + this.y + " " + this.z);
     }
+
 }
 let obj0 = new p(" IDB-BISEW", 20);
 console.log(obj0.x);
+
 let obj1 = new q(" IDB-BISEW", 20, "Batch");
 console.log(obj0.x, obj1.y);
 console.log(obj0.saySomething());
 console.log(obj1.saySomething());
+
+*/
+function Identity(arg) {
+    return arg;
+}
+let arr = Identity(["IDB-BISEW", "Batch", "J2EE"]);
+console.log(arr);
+arr.push("AAAABCC");
+console.log(arr);
+arr.pop();
+// console.log(arr);
+console.log(Identity(["IDB-BISEW", "Batch", "J2EE"]));
+console.log(Identity([1, 2, 3]));
+console.log(Identity([true, false, true]));
+console.log(Identity([{ x: 10, y: 20 }, { x: 30, y: 40 }]));
+console.log(Identity([new Date(), new Date()]));

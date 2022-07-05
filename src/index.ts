@@ -273,7 +273,7 @@ console.log(obj.x + " " + obj.y + " " + obj.z + " " + "Batch" + " " + "IDB-BISEW
 console.log(obj.x + " " + obj.y + " " + obj.z + " " + "Batch" + " " + "IDB-BISEW" + " " + "J2EE");
 */
 
-
+/*
 class p {
     x!: string;
     y!: number;
@@ -303,3 +303,21 @@ let obj1 = new q(" IDB-BISEW", 20, "Batch");
 console.log(obj0.x, obj1.y);
 console.log(obj0.saySomething());
 console.log(obj1.saySomething());
+
+*/
+
+function Identity<type>(arg: type[]): type[] {
+    return arg;
+}
+let arr = Identity<string>(["IDB-BISEW", "Batch", "J2EE"]);
+console.log(arr);
+arr.push("AAAABCC");
+console.log(arr);
+arr.pop();
+// console.log(arr);
+console.log(Identity(["IDB-BISEW", "Batch", "J2EE"]));
+console.log(Identity([1, 2, 3]));
+console.log(Identity([true, false, true]));
+console.log(Identity([{ x: 10, y: 20 }, { x: 30, y: 40 }]));
+console.log(Identity([new Date(), new Date()]));
+

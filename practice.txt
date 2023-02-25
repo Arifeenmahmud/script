@@ -1,0 +1,123 @@
+scripts.js:10 User name variable
+var firstName = 'john';
+undefined
+firstName
+'john'
+typeof firstName
+'string'
+"ivan" + " " "Gomes"
+VM373:1 Uncaught SyntaxError: Unexpected string
+"ivan" + " " + "Gomes"
+'ivan Gomes'
+ var firstName = 'jhon';
+undefined
+firstName.length
+4
+firs
+VM493:1 Uncaught ReferenceError: firs is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM493:1
+firstName[0]
+'j'
+var url = "http://www.google.com"
+undefined
+ur
+VM603:1 Uncaught ReferenceError: ur is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM603:1
+url.replace("http","https")
+'https://www.google.com'
+var price = 1000.20
+undefined
+var num1 = 20
+undefined
+var num2 = 3
+undefined
+num
+VM855:1 Uncaught ReferenceError: num is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM855:1
+num1 + num2
+23
+Math.pow(2,4)
+16
+Math.round(2.30)
+2
+Math.ceil(2.2)
+3
+Math.random()
+0.25389767914201955
+Math.random() * 100
+31.87892987397771
+Math.round(Math.random * 100)
+NaN
+Math.round((Math.random) * 100)
+NaN
+Math.round(Math.random() * 100)
+46
+Math.round(Math.random() * 100)
+17
+Math.round(Math.random() * 100)
+45
+Math.round(Math.random() * 100)
+40
+var myNumber = 3.222
+undefined
+myNumber.toFixed()
+'3'
+myNumber.toFixed(2)
+'3.22'
+myNumber.toFixed(3)
+'3.222'
+var sales = 20;
+undefined
+sales = sales + 5;
+25
+sales += 5;
+30
+var name = "arifeen";
+undefined
+name += " "
+'arifeen '
+name += " mahmud"
+'arifeen  mahmud'
+var firstNumber ="21";
+undefined
+var secondNumber = "40";
+undefined
+firstNumber + secondNumber
+'2140'
+parseInt(firstNumber)+parseInt(secondNumber)
+61
+ var bool = true;
+undefined
+var bool = false
+undefined
+var age = 16;
+undefined
+if age>=18
+VM2069:1 Uncaught SyntaxError: Unexpected identifier 'age'
+age>=18
+false
+age>=16
+true
+var password = "1234a"
+undefined
+var confirmPassword == "12345a"
+VM2226:1 Uncaught SyntaxError: Unexpected token '=='
+var confirmPassword = "12345a"
+undefined
+password == confirmPassword
+false
+"4" == 4
+true
+"4" === 4
+false
+"4" === "4"
+true
+4 == 4
+true
+4 != 4
+false
+4 !== 4
+false
